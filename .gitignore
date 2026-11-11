@@ -1,0 +1,16 @@
+# Only the demo web app (uav-forecasting-demo/) is pushed.
+/venv/
+.venv/
+/KC-S2O/
+/data/
+/papers/
+/export_predictions.py
+/requirements.txt
+.cursor/
+
+# Demo app
+uav-forecasting-demo/node_modules/
+uav-forecasting-demo/dist/
+
+__pycache__/
+.DS_Store
