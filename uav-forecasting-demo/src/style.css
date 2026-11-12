@@ -16,3 +16,9 @@
 .venue{font:11px "DM Mono",monospace;color:#6b7280;letter-spacing:.3px;margin:-2px 0 10px}
 .method-card{display:flex;flex-direction:column}.method-card .method-links{margin-top:auto;padding-top:14px}.method-card p{margin-bottom:0}
 .method-card .status{align-self:flex-start}
+.step-row button.on{background:#2b3a4f;color:#fff;border-color:#2b3a4f}
+.num-input.mono{font-family:'DM Mono',monospace}
+.help{font-size:11px;line-height:1.6;color:#6b7280;margin:8px 0 0}
+.run-btn{width:100%;margin-top:18px;padding:12px;background:#2b3a4f;color:#fff;border:0;border-radius:4px;font:600 13px 'DM Sans';cursor:pointer}.run-btn:disabled{opacity:.6;cursor:wait}
+.msg{font-size:12px;line-height:1.5;margin:12px 0 0;padding:9px 11px;border-radius:4px}
+.msg.err{background:#f6e3de;color:#8a2f17;border:1px solid #e5b9ad}.msg.warn{background:#f4ecd6;color:#6e5413;border:1px solid #e0d1a3;margin:0 0 12px}

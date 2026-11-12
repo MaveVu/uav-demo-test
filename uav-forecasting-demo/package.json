@@ -9,6 +9,7 @@
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
+    "onnxruntime-web": "^1.31.1",
     "plotly.js-dist-min": "^3.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

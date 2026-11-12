@@ -2,9 +2,12 @@
 /venv/
 .venv/
 /KC-S2O/
+/KITE/
+/TransKITE/
 /data/
 /papers/
 /export_predictions.py
+/export_onnx.py
 /requirements.txt
 .cursor/
 
