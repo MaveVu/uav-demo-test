@@ -18,11 +18,12 @@ const plot = f => f && <Plot data={f.data} layout={f.layout} config={CONFIG} sty
 // Playback + the four panels (3D trajectory, prediction error, per-axis, statistics).
 // `truth` may be null (user trajectory without ground truth): then only the forecast itself is shown.
 function ForecastView({ history, truth, pred, methodName, threshold, fps, dt }) {
-  const [step, setStep] = useState(0);
+  const [rawStep, setStep] = useState(0);
   const [playing, setPlaying] = useState(false);
   const [started, setStarted] = useState(false);
 
   const n = pred.length;
+  const step = Math.min(rawStep, n - 1); // a new, shorter forecast renders once before the reset effect runs
   const stats = useMemo(() => (truth ? statistics(truth, pred, threshold) : null), [truth, pred, threshold]);
 
   useEffect(() => { setStep(0); setStarted(false); setPlaying(false); }, [history, truth, pred]);
